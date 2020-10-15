@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ruby Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+      ul
+        div#logo
+          img(src="/static/img/logo.png")
+          | RDA
+        li #[a(href="/") About]
+        li #[a(href="/") Home]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]
+
+    section#introSection
+      div Ruby's Dance Academy
+      div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+      h2  Our Mission 
+      div.card
+        h3 Dance Perfection
+        div.card-box 
+          div.card-img
+            img(src="/static/img/1.png", alt="check your internet connection")
+          div.card-content
+            p This is best dance academy  
+          
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/img/2.png", alt="check your internet connection")
+          div.card-content
+            p This is best dance academy 
+        
+      div.card
+        h3 Experts teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/3.png", alt="check your internet connection")
+          div.card-content
+            p This is best dance academy    
+
+
+    section#sponsorSection
+      h2 Our Sponsors
+      div#sponsors
+        img(src="/static/img/logo1.png", alt="check your internet connection" class="spImage") 
+        img(src="/static/img/logo2.png", alt="check your internet connection" class="spImage") 
+        img(src="/static/img/logo3.png", alt="check your internet connection" class="spImage") 
+        img(src="/static/img/logo4.png", alt="check your internet connection" class="spImage") 
+
+    footer#footer
+      | Copyright © 2020 RubyDanceAcademy.com
+
+    script
+      include ../static/index.js
